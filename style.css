@@ -5,10 +5,16 @@ body {
     margin: auto;
     background-color: #181818;
     font-family: 'Source Sans Pro', sans-serif;
+    color: #D6D6D6;
+}
+
+strong {
+    color: white;
 }
 
 .profile {
-    background: rgba(0, 0, 0, 0.858) url(imagens/fundo.png);  /*Essa propriedade adiciona uma imagem como bg e escurece*/
+    background: rgba(0, 0, 0, 0.800) url(imagens/fundo.png);
+    /*Essa propriedade adiciona uma imagem como bg e escurece*/
     width: 100%;
     height: 350px;
     background-position: center;
@@ -20,14 +26,17 @@ body {
     margin-top: -22px;
 }
 
-.profile-content {  /* essa classe centraliza o profile*/  /*Precisa melhorar a responsividade. Itens sem quebra de linha*/
+.profile-content {
+    /* essa classe centraliza o profile*/
+    /*Precisa melhorar a responsividade. Itens sem quebra de linha*/
     color: #D6D6D6;
     width: 760px;
     margin: auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-direction: row;
-    align-items: center;   
+    flex-wrap: wrap;
 
 }
 
@@ -37,7 +46,6 @@ body {
     justify-content: center;
     flex-direction: column;
 }
-
 
 #picture {
     border-radius: 100%;
@@ -49,7 +57,6 @@ body {
 }
 
 h3 {
-    font-family: 'Source Sans Pro', sans-serif;
     font-size: 40px;
 }
 
@@ -65,8 +72,10 @@ h3 {
 .profile-locality {
     display: flex;
     flex-direction: row;
-    align-items: center;    /* essa propriedade faz com que o pin fique com a proporcao normal*/
+    align-items: center;
+    /* essa propriedade faz com que o pin fique com a proporcao normal*/
     font-size: 25px;
+    font-weight: 900;
     position: relative;
     top: 118px;
 }
@@ -76,3 +85,50 @@ h3 {
     padding-left: 4px;
 }
 
+main {
+    height: 450px;
+    position: relative;
+    top: 330px;   /*atencao para o comportamento*/
+    display: flex;
+    flex-direction: column;
+    gap: 50px; /* empurra a proxima caixa pra baixo*/
+    /* justify-content: center; sera necessario? */
+    align-items: center;
+    
+}
+
+#main-title {
+    font-size: 40px;
+}
+
+#about-me-text {
+    text-align: justify;
+    font-size: 22px;
+    font-style: normal;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.current-position {
+    width: 760px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    background: linear-gradient(91.85deg, #0909093f -2.94% 20%, #036b52cc 89.87%);
+    
+}
+
+.position {
+    font-size: 18px;
+    margin-left: 18px;
+}
+
+.company {
+    text-align: right;
+    font-size: 18px;
+    margin-right: 18px;
+}
+
+.link-company {
+    text-decoration: none;
+    color: white;
+}
