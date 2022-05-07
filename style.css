@@ -1,1 +1,78 @@
 @charset "UTF-8";
+
+body {
+    width: 760px;
+    margin: auto;
+    background-color: #181818;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.profile {
+    background: rgba(0, 0, 0, 0.858) url(imagens/fundo.png);  /*Essa propriedade adiciona uma imagem como bg e escurece*/
+    width: 100%;
+    height: 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    position: absolute;
+    left: 0;
+    margin-top: -22px;
+}
+
+.profile-content {  /* essa classe centraliza o profile*/  /*Precisa melhorar a responsividade. Itens sem quebra de linha*/
+    color: #D6D6D6;
+    width: 760px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;   
+
+}
+
+.profile-picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+#picture {
+    border-radius: 100%;
+    width: 190px;
+    margin-top: 30px;
+    position: relative;
+    top: 25px;
+    left: -20px;
+}
+
+h3 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 40px;
+}
+
+#redline {
+    background-color: red;
+    width: 65px;
+    height: 5px;
+    position: relative;
+    top: -40px;
+    left: 80px;
+}
+
+.profile-locality {
+    display: flex;
+    flex-direction: row;
+    align-items: center;    /* essa propriedade faz com que o pin fique com a proporcao normal*/
+    font-size: 25px;
+    position: relative;
+    top: 118px;
+}
+
+#pin {
+    width: 30px;
+    padding-left: 4px;
+}
+
