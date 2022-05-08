@@ -56,12 +56,12 @@ strong {
     left: -20px;
 }
 
-h3 {
+#name {
     font-size: 40px;
 }
 
 #redline {
-    background-color: red;
+    background-color: #ff0000;
     width: 65px;
     height: 5px;
     position: relative;
