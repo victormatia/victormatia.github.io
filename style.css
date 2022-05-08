@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body {
-    width: 760px;
+    width: 860px;
     margin: auto;
     background-color: #181818;
     font-family: 'Source Sans Pro', sans-serif;
@@ -30,7 +30,7 @@ strong {
     /* essa classe centraliza o profile*/
     /*Precisa melhorar a responsividade. Itens sem quebra de linha*/
     color: #D6D6D6;
-    width: 760px;
+    width: 860px;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -74,27 +74,30 @@ h3 {
     flex-direction: row;
     align-items: center;
     /* essa propriedade faz com que o pin fique com a proporcao normal*/
-    font-size: 25px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
     font-weight: 900;
     position: relative;
     top: 118px;
 }
 
 #pin {
-    width: 30px;
+    width: 20px;
     padding-left: 4px;
 }
 
 main {
     height: 450px;
     position: relative;
-    top: 330px;   /*atencao para o comportamento*/
+    top: 330px;
+    /*atencao para o comportamento*/
     display: flex;
     flex-direction: column;
-    gap: 50px; /* empurra a proxima caixa pra baixo*/
+    gap: 50px;
+    /* empurra a proxima caixa pra baixo*/
     /* justify-content: center; sera necessario? */
     align-items: center;
-    
+
 }
 
 #main-title {
@@ -109,12 +112,14 @@ main {
 }
 
 .current-position {
-    width: 760px;
+    width: 860px;
     display: flex;
     justify-content: space-between;
     border-radius: 10px;
-    background: linear-gradient(91.85deg, #0909093f -2.94% 20%, #036b52cc 89.87%);
-    
+    background: linear-gradient(91.85deg, #1a1a1aeb -2.94%, #036b53da 89.87%), url(imagens/logotrybe.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: right;
 }
 
 .position {
@@ -132,3 +137,18 @@ main {
     text-decoration: none;
     color: white;
 }
+
+.links {
+    width: 860px;
+    /* font-size: 20px; */
+    position: fixed;
+    bottom: 40px;
+    display: flex;
+    justify-content: center;
+    /* font-family: 'Quicksand', sans-serif; */
+}
+
+.icons {
+    margin: 15px;
+}
+
