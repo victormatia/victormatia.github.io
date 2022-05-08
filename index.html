@@ -1,40 +1,67 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio | Victor Matias</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio | Victor Matias</title>
+  <link rel="stylesheet" href="style.css">
+  <!--secao de fontes inicio-->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> 
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Quicksand:wght@300&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+  <!--secao de fontes fim-->
 </head>
+
 <body>
-    <div class="profile">
-            <img class="eu" src="imagens/20220422_000712.png" alt="Foto de Victor Matias" width="300px">
-        <h1>Victor Matias</h1>
-        <div class="redline"></div>
+  <div class="profile">
+    <div class="profile-content">
+      <div class="profile-picture">
+        <img id="picture" src="imagens/eu.png" alt="esse sou eu com a cara toda riscada" width="300px">
+        <h3 id="name">Victor Matias</h3>
+        <div id="redline"></div>
+      </div>
+      <div class="profile-locality">
+        <p><strong>Itapipoca - CE</strong></p>
+        <img id="pin" src="imagens/icones/pin.png" alt="icone de um pin">
+      </div>
     </div>
-    <div class="container">
-        <div class="linha-do-tempo">
-            <div class="ponto-no-tempo">
-                <div class="whiteline"></div>
-                <h2><strong>Entrei na Trybe</strong></h2>
-                <p><strong>20 de Abril, 2022.</strong></p>
-                <p>Aceitei a minha paixão por desenvolver e decidir entrar nessa nova jornada com a Trybe!</p>
-            </div>
-            <!--<div class="ponto-no-tempo">                            *Essas são as próximas implementações*
-                <div class="whiteline"></div>
-                <h2><strong>Entrei na Trybe</strong></h2>
-                <p><strong>20 de Abril, 2022.</strong></p>
-                <p>Aceitei a minha paixão por desenvolver e decidir entrar nessa nova jornada com a Trybe!</p>
-            </div>
-            <div class="ponto-no-tempo">
-                <div class="whiteline"></div>
-                <h2><strong>Entrei na Trybe</strong></h2>
-                <p><strong>20 de Abril, 2022.</strong></p>
-                <p>Aceitei a minha paixão por desenvolver e decidir entrar nessa nova jornada com a Trybe!</p>
-            </div>-->
+  </div>
+
+    <main>
+      <div class="about-me">
+        <h1 id="main-title">Sobre mim</h1>
+        <p id="about-me-text"><strong>Hello world!</strong>  Eu me chamo Victor, mas pode me chamar de Vitu. Tenho 23 anos e sou Cearense. Há um tempo descobri  minha paixão pelo desenvolvimento de software, e em 20 de abril de 2022 decidi entrar de cabeça nesse mundo  e me tornar um dev. Dito isso, sejam bem-vindos ao meu portfólio.</p>
+      </div>
+
+      <div class="current-position">
+        <div class="position">
+          <h4><strong>Atual cargo</strong></h4>
+          <p>Dev Full-Stack em formação</p>
         </div>
-    </div>
-    
+        <div class="company">
+          <h4><strong>Instituição</strong></h4>
+          <p><a class="link-company" href="https://www.betrybe.com/" target="_blank"><strong>Trybe</strong></a></p>
+        </div>
+      </div>
+    </main>
+
+  <div class="links">
+    <a class="link-company icons" href="https://github.com/victormatia" target="_blank"><img src="imagens/icones/githubIcon.png" alt="icone do github"></a>
+    <!-- <a class="link-company" href="https://github.com/victormatia" target="_blank"><strong>GitHub</strong></a> -->
+    <a class="link-company icons" href="https://www.linkedin.com/in/victor-matias-b22611238/" target="_blank"><img src="imagens/icones/linkedinIcon.png" alt="icone do linkedin"></a>
+    <!-- <a class="link-company" href="#"><strong>LinkedIn</strong></a> -->
+    <a class="link-company icons" href="#"><img src="imagens/icones/emailIcon.png" alt="icone do email"></a>
+    <!-- <a class="link-company" href="#"><strong>Gmail</strong></a> -->
+  </div>
+
 </body>
+
 </html>
