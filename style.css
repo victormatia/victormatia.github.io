@@ -1,61 +1,44 @@
-@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
-    width: 60%;
-    max-width: 850px;
-    margin: auto;
     background-color: #181818;
     font-family: 'Source Sans Pro', sans-serif;
     color: #D6D6D6;
 }
 
-strong {
-    color: white;
-}
-
 .profile {
     background: rgba(0, 0, 0, 0.800) url(imagens/fundo.png);
-    /*Essa propriedade adiciona uma imagem como bg e escurece*/
     width: 100%;
-    height: 350px;
+    height: 300px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: darken;
-    position: absolute;
-    left: 0;
-    margin-top: -22px;
 }
 
 .profile-content {
-    /* essa classe centraliza o profile*/
-    /*Precisa melhorar a responsividade. Itens sem quebra de linha*/
-    color: #D6D6D6;
     width: 80%;
     max-width: 860px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-direction: row;
-    /* flex-wrap: wrap; */
-
 }
 
 .profile-picture {
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
 }
 
 #picture {
     border-radius: 100%;
-    width: 190px;
-    margin-top: 30px;
-    position: relative;
-    top: 25px;
-    left: -20px;
+    width: 170px;
+    margin: 20px 0;
+    
 }
 
 #name {
@@ -66,16 +49,15 @@ strong {
     background-color: #ff0000;
     width: 65px;
     height: 5px;
+    margin: 5px 0;
     position: relative;
-    top: -40px;
-    left: 80px;
+    left: 150px;
 }
 
 .profile-locality {
     display: flex;
     flex-direction: row;
     align-items: center;
-    /* essa propriedade faz com que o pin fique com a proporcao normal*/
     font-family: 'Quicksand', sans-serif;
     font-size: 20px;
     font-weight: 900;
@@ -84,22 +66,20 @@ strong {
 }
 
 #pin {
-    width: 20px;
-    padding-left: 4px;
+    width: 25px;
+    margin: 0 5px;
 }
 
 main {
-    height: 450px;
-    position: relative;
-    top: 330px;
-    /*atencao para o comportamento*/
     display: flex;
     flex-direction: column;
-    gap: 50px;
-    /* empurra a proxima caixa pra baixo*/
-    /* justify-content: center; sera necessario? */
     align-items: center;
+}
 
+.about-me {
+    width: 60%;
+    max-width: 850px;
+    margin: 10px 0;
 }
 
 #main-title {
@@ -109,45 +89,141 @@ main {
 #about-me-text {
     text-align: justify;
     font-size: 22px;
-    font-style: normal;
     font-family: 'Quicksand', sans-serif;
+    margin: 10px 0;
 }
 
 .current-position {
-    width: 100%;
+    width: 60%;
+    max-width: 850px;
+    margin: 10px 0;
     display: flex;
     justify-content: space-between;
     border-radius: 10px;
+    padding: 20px 20px;
     background: linear-gradient(91.85deg, #1a1a1aeb -2.94%, #036b53da 89.87%), url(imagens/logotrybe.png);
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: center;
 }
 
 .position {
-    font-size: 18px;
-    margin-left: 18px;
+    font-size: 20px;
+}
+
+.position h4 {
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+.position p {
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+hr {
+    display: none;
 }
 
 .company {
     text-align: right;
-    font-size: 18px;
-    margin-right: 18px;
+    font-size: 20px;
 }
 
-.link-company {
+.company h4 {
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+.company a {
     text-decoration: none;
-    color: white;
+    color: #D6D6D6;
 }
 
 .links {
-    width: 80%;
-    width: 860px;
-    display: flex;
-    justify-content: center;
+    margin: 20px 0;
 }
 
-.icons {
-    margin: 15px;
-}
+@media screen and (max-width: 600px) {
 
+    .profile {
+        height: 300px;
+    }
+
+    .profile-content {
+        width: 80%;
+        max-width: 860px;
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .profile-picture {
+        align-items: center;
+    }
+
+    .profile-picture img {
+        width: 250px;
+    }
+
+    .profile-locality {
+        display: none;
+    }
+
+    #name {
+        font-size: 30px;
+    }
+
+    #redline {
+        position: static;
+    }
+
+    .about-me {
+        width: 80%;
+    }
+
+    #main-title {
+        font-size: 30px;
+    }
+
+    .current-position {
+        width: 80%;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    .position {
+        margin: 20px 0;
+    }
+
+    .position h4 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .position p {
+        font-size: 20px;
+        margin: 5px 0;
+    }
+
+    hr {
+        display: block;
+        width: 50%;
+    }
+
+    .company {
+        align-items: center;
+        margin: 20px 0;
+    }
+
+    .company h4 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .company p {
+        font-size: 22px;
+        text-align: center;
+    }
+}
