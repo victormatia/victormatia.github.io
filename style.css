@@ -93,7 +93,21 @@ main {
     margin: 10px 0;
 }
 
-.current-position {
+#current-position {
+    background: linear-gradient(91.85deg, #1a1a1aeb -2.94%, #036b53da 89.87%), url(imagens/logotrybe.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#current-project {
+    background: linear-gradient(91.85deg, #090909c1, #9f6b0176), url(imagens/bg-projects-large.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cards {
     width: 60%;
     max-width: 850px;
     margin: 10px 0;
@@ -101,22 +115,18 @@ main {
     justify-content: space-between;
     border-radius: 10px;
     padding: 20px 20px;
-    background: linear-gradient(91.85deg, #1a1a1aeb -2.94%, #036b53da 89.87%), url(imagens/logotrybe.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
-.position {
+.cards-left {
     font-size: 20px;
 }
 
-.position h4 {
+.cards-left h4 {
     font-size: 22px;
     margin: 10px 0;
 }
 
-.position p {
+.cards-left p {
     font-size: 20px;
     margin: 5px 0;
 }
@@ -125,17 +135,17 @@ hr {
     display: none;
 }
 
-.company {
+.cards-rigth {
     text-align: right;
     font-size: 20px;
 }
 
-.company h4 {
+.cards-rigth h4 {
     font-size: 22px;
     margin: 10px 0;
 }
 
-.company a {
+.cards-rigth a {
     text-decoration: none;
     color: #D6D6D6;
 }
@@ -186,23 +196,23 @@ hr {
         font-size: 30px;
     }
 
-    .current-position {
+    .cards {
         width: 80%;
         flex-direction: column;
         align-items: center;
         padding: 20px 0;
     }
 
-    .position {
+    .cards-left {
         margin: 20px 0;
     }
 
-    .position h4 {
+    .cards-left h4 {
         font-size: 22px;
         text-align: center;
     }
 
-    .position p {
+    .cards-left p {
         font-size: 20px;
         margin: 5px 0;
     }
@@ -212,17 +222,17 @@ hr {
         width: 50%;
     }
 
-    .company {
+    .cards-rigth {
         align-items: center;
         margin: 20px 0;
     }
 
-    .company h4 {
+    .cards-rigth h4 {
         font-size: 22px;
         text-align: center;
     }
 
-    .company p {
+    .cards-rigth p {
         font-size: 22px;
         text-align: center;
     }
